@@ -36,7 +36,7 @@ const About = () => {
                         <Fade delay="50" duration="1000" triggerOnce={true}>
                             <h2>Hey! I'm Kathryn.</h2>
                             <p>
-                                A pre-med junior pursuing a Computer Science B.A. on the Visual Computing Track, blah blah blah blah</p>
+                                A pre-med junior pursuing a Computer Science B.A. on the Visual Computing Track, I'm an aspiring UIUX designer and front-end developer with a passion for...</p>
                         </Fade>
                     </div>
                 </div>
