@@ -31,7 +31,7 @@ const Work = () => {
                     </Fade>
                 </div>
 
-                <div id="MainCards" className="columns-2">
+                <div id="MainCards" className="columns-3">
                     <div className="Card-Full">
                         <Fade delay="25" duration="1000" triggerOnce={true}>
                             <MainCard name="Slingshot Mobile" number={1} description="I worked with three fellow classmates in my CSCI1300 “UI/UX” course to design an interactive mobile prototype for Slingshot, a medical billing YC B2B startup." tags={["UIUX Design", "Product Branding", "Mobile", "Front-End Development"]} />

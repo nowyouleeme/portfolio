@@ -151,12 +151,11 @@ body {
 /* LANDING PAGE */
 /* Display */
 .DisplayPadding {
-  padding: 12vh 0 24vh 0;
+  padding: 13vh 0 24vh 0;
 }
 
 #Landing {
   background-image: url("BLOBBG.png");
-  background-color: #F8F8F8;
 }
 
 #Display {
@@ -168,7 +167,7 @@ body {
   color: #1c1c1c;
   font-family: 'Syne', sans-serif;
   font-weight: 700;
-  line-height: 12vh;
+  line-height: 10vh;
   font-size: 4.25em;
   margin: 0;
 }
@@ -191,7 +190,7 @@ body {
 #LandingDesc p {
   color: #1c1c1c;
   font-family: 'roobert_trialmedium';
-  font-size: 1.5em;
+  font-size: 1.45em;
   margin-bottom: 2.25vh;
 }
 
@@ -244,12 +243,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1d1d1d;
 }
 
 #FeaturedContent {
   margin: 0 6.4vw;
-  color: #F8F8F8;
+  color: rgb(248, 248, 248);
 }
 
 #FeaturedHeader {
@@ -261,7 +259,7 @@ body {
 .featuredP {
   color: #cacaca;
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.3em;
 }
 
 .featuredP:hover {
@@ -273,7 +271,7 @@ body {
 #FeaturedHeader h2 {
   font-weight: 700;
   font-family: 'Syne', sans-serif;
-  font-size: 2.75em;
+  font-size: 3em;
   color: #F8F8F8;
   margin: 0;
 }
@@ -330,8 +328,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
+} 
 .CardNumber {
   font-family: 'roobert_trialmedium';
   color: #949494;
@@ -427,6 +424,7 @@ body {
 }
 
 .CardImg img {
+  border-radius: 0.6rem;
   width: 100%;
 }
 
@@ -447,6 +445,27 @@ body {
   margin: 0;
   font-size: 1.2em;
 }
+
+.CardInfo:hover .CardDesc h3 {
+  color: #26C023;
+}
+
+.CardInfo:hover .CardDesc p {
+  color: #26C023;
+}
+
+.MainCardInfo:hover .MainCardDesc h3 {
+  color: #26C023;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.MainCardInfo:hover .MainCardDesc p {
+  color: #26C023;
+}
+
 
 .CardTags {
   width: 25%;
@@ -471,13 +490,13 @@ body {
   font-family: 'roobert_trialregular';
   color: #F8F8F8;
   margin: 0 0 1vh 0;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .MainCardDesc p {
   font-family: 'roobert_trialmedium';
   color: #F8F8F8;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 
@@ -490,6 +509,10 @@ body {
   width: fit-content;
   background-color: #5E5E5E;
   text-align: center;
+}
+
+.FeaturedCardTags {
+  margin-right: 0;
 }
 
 .ProjectTag p {
@@ -627,10 +650,13 @@ body {
 }
 
 #NavLeft h1 {
-  transition: 0.5s;
   font-weight: 700;
   font-family: 'Syne', sans-serif;
   font-size: 1.5em;
+}
+
+.brand:hover h1 {
+  color: #0048f0;
 }
 
 #NavLogoImg {
@@ -650,10 +676,13 @@ body {
 }
 
 #NavRight-expand p {
-  transition: 0.5s;
   font-family: 'roobert_trialmedium';
   font-size: 1.1em;
   margin: 0 1vw;
+}
+
+.ExpandedLink:hover p {
+  color: #0048f0;
 }
 
 #NavRight-collapse {
@@ -676,7 +705,7 @@ body {
   font-family: 'Syne', sans-serif;
   font-weight: 700;
   font-size: 3.5em;
-  margin: 0 3.25vw;
+  margin: 0 4.25vw;
   color: #F8F8F8
 }
 
@@ -688,11 +717,12 @@ body {
   margin: 0;
 }
 
-.columns-2 {
+.columns-3 {
   margin: 0 1.5vw;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4vw;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4vw;
+  row-gap: 10vh;
 }
 
 #About {
@@ -741,6 +771,11 @@ body {
   width: 100%
 }
 
+.MainCardTagsMargin {
+  margin-right: 0.5vw;
+}
+
+
 
 
 /* Breakpoints */
@@ -764,7 +799,7 @@ body {
 
   /* Display */
   .DisplayPadding {
-    padding: 12vh 0 22vh 0;
+    padding: 13vh 0 22vh 0;
   }
 
   #Display {
@@ -776,7 +811,7 @@ body {
   #Display h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
-    line-height: 10vh;
+    line-height: 9vh;
     font-size: 3.75em;
     margin: 0;
   }
@@ -834,7 +869,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1d1d1d;
   }
 
   #FeaturedContent {
@@ -868,17 +902,16 @@ body {
   }
 
   .Card-left {
-    margin: 0 3vw;
+    margin: 0;
     grid-column: 1 / 9;
   }
 
   .Card-Full {
     margin: 0;
-    grid-column: 1 / 1;
   }
 
   .Card-right {
-    margin: 0 3vw;
+    margin: 0;
     grid-column: 1 / 9;
   }
 
@@ -968,20 +1001,20 @@ body {
 
   .MainCardDesc {
     margin-bottom: 2vh;
-    width: 75%;
+    width: 100%;
   }
 
   .MainCardDesc h3 {
     font-family: 'roobert_trialregular';
     color: #F8F8F8;
     margin: 0 0 1vh 0;
-    font-size: 1.9em;
+    font-size: 1.25em;
   }
 
   .MainCardDesc p {
     font-family: 'roobert_trialmedium';
     color: #F8F8F8;
-    font-size: 1.2em;
+    font-size: 0.95em;
   }
 
   /* Project Tag */
@@ -1111,7 +1144,6 @@ body {
   }
 
   #NavRight-expand p {
-    transition: 0.5s;
     font-family: 'roobert_trialmedium';
     font-size: 1em;
     margin: 0 1.5vw;
@@ -1133,18 +1165,11 @@ body {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: 3.25em;
-    margin: 0 4vw;
+    margin: 0 5vw;
   }
 
   #MainCards {
     padding: 4.5vh 4vw 8vh 4vw;
-  }
-
-  .columns-2 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 18vh;
   }
 
   .AboutPadding {
@@ -1171,19 +1196,34 @@ body {
   #AboutMePic img {
     width: 100%
   }
-  
+
   #AboutMeDesc {
     width: 50%;
     font-family: 'roobert_trialmedium';
     padding: 0 2vw 2vh 1.5vw;
   }
-  
+
   #AboutMeDesc h2 {
     font-size: 2em;
   }
-  
+
   #AboutMeDesc p {
     font-size: 1em;
+  }
+
+  .columns-3 {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4vw;
+    row-gap: 9vh;
+  }
+
+  .FeaturedCardTags {
+    margin-right: 0;
+  }
+  .MainCardTagsMargin {
+    margin-right: 0.75vw;
   }
 
 }
@@ -1207,7 +1247,7 @@ body {
 
   /* Display */
   .DisplayPadding {
-    padding: 12vh 0 24vh 0;
+    padding: 14vh 0 24vh 0;
   }
 
   #Display {
@@ -1218,7 +1258,7 @@ body {
   #Display h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
-    line-height: 8vh;
+    line-height: 7vh;
     font-size: 2.75em;
     margin: 0;
   }
@@ -1277,7 +1317,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1d1d1d;
   }
 
   #FeaturedContent {
@@ -1416,7 +1455,7 @@ body {
 
   .MainCardDesc {
     margin-bottom: 2vh;
-    width: 100%;
+    width: 90%;
   }
 
   .MainCardDesc h3 {
@@ -1425,6 +1464,8 @@ body {
     margin: 0 0 1vh 0;
     font-size: 1.5em;
   }
+
+
 
   .MainCardDesc p {
     font-family: 'roobert_trialmedium';
@@ -1452,7 +1493,7 @@ body {
 
   /* Footer */
   #FooterContainer {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1656,18 +1697,12 @@ body {
 
   #AllWork h1 {
     font-size: 3em;
-    margin: 0 4.5vw;
+    margin: 0 5.5vw;
     color: #F8F8F8;
   }
 
   #MainCards {
     padding: 3.5vh 4.5vw 6vh 4.5vw;
-  }
-
-  .columns-2 {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 10vh;
   }
 
   .WorkPadding {
@@ -1679,7 +1714,7 @@ body {
   }
 
   #AboutMeContainer {
-    padding: 4vh 0;
+    padding: 6vh 0 3vh 0;
     display: flex;
     flex-direction: column;
   }
@@ -1702,13 +1737,28 @@ body {
     font-family: 'roobert_trialmedium';
     padding: 0 3vw 2vh 3vw;
   }
-  
+
   #AboutMeDesc h2 {
     font-size: 2em;
   }
-  
+
   #AboutMeDesc p {
     font-size: 1em;
   }
+  .FeaturedCardTags {
+    margin-right: 1.5vw;
+  }
 
+  .MainCardTagsMargin {
+    margin-right: 1.5vw;
+  }
+
+  .columns-3 {
+    margin: 0 1.5vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 8vh;
+    column-gap: 0;
+  }
 }

@@ -61,7 +61,7 @@ const HamButton = (props) => {
           stroke={color}
           animate={path01Controls}
           strokeLinecap="round"
-          transition={{duration: 0.2}}
+          transition={{duration: 0.15}}
 
         />
         <motion.path
@@ -70,7 +70,7 @@ const HamButton = (props) => {
           stroke={color}
           animate={path03Controls}
           strokeLinecap="round"
-          transition={{duration: 0.2}}
+          transition={{duration: 0.15}}
         />
         <motion.path
         {...path02Variants.closed}
@@ -78,7 +78,7 @@ const HamButton = (props) => {
           stroke={color}
           animate={path02Controls}
           strokeLinecap="round"
-          transition={{duration: 0.2}}
+          transition={{duration: 0.15}}
         />
       </svg>
     </button>

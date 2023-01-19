@@ -20,10 +20,21 @@ const NavbarColorChange = (props) => {
     const [color, setColor] = useState({ bg: "#ffffff00", text: "#1c1c1c", border: "3px solid #ffffff00" });
     const [width, setWidth] = useState("100%");
 
+    const [display, setDisplay] = useState("none");
+
+    const handleDisplay = () => {
+        setIsOpen(!isOpen);
+        if (display == "none") {
+            setDisplay("flex")
+        } else {
+            setDisplay("none")
+        }
+    }
+
     const changeColor = () => {
         trigger
             ? setColor({ bg: "#ffffff00", text: "#1c1c1c", border: "3px solid #ffffff00" })
-            : setColor({ bg: "#5e5e5e66", text: "#F8F8F8", border: "3px solid #5e5e5e66" })
+            : setColor({ bg: "#2b2b2bda", text: "#F8F8F8", border: "3px solid #ffffff00" })
     }
 
     // Similar to componentDidMount and componentDidUpdate:
@@ -31,25 +42,25 @@ const NavbarColorChange = (props) => {
         window.addEventListener("scroll", changeColor)
     })
 
-    const handleWidth = () => {
-        if (typeof window !== "undefined") {
-            let newWidth = (-0.035 * document.scrollingElement.scrollTop) + 105
-            if (newWidth <= 100) {
-                setWidth(newWidth.toString() + '%')
-            }
-        }
-    }
+    // const handleWidth = () => {
+    //     if (typeof window !== "undefined") {
+    //         let newWidth = (-0.035 * document.scrollingElement.scrollTop) + 105
+    //         if (newWidth <= 100) {
+    //             setWidth(newWidth.toString() + '%')
+    //         }
+    //     }
+    // }
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.addEventListener("scroll", handleWidth);
-        }
-        return () => {
-            if (typeof window !== "undefined") {
-                window.removeEventListener("scroll", handleWidth);
-            }
-        };
-    }, []);
+    // useEffect(() => {
+    //     if (typeof window !== "undefined") {
+    //         window.addEventListener("scroll", handleWidth);
+    //     }
+    //     return () => {
+    //         if (typeof window !== "undefined") {
+    //             window.removeEventListener("scroll", handleWidth);
+    //         }
+    //     };
+    // }, []);
 
     return (
         <div id="NavContainer">
@@ -59,22 +70,24 @@ const NavbarColorChange = (props) => {
                         <div id="NavLogoImg">
                             <img src={require("../assets/8BALL.png")} alt="Black and white billiard 8-ball slightly tilted" />
                         </div>
-                        <h1 style={{ color: color["text"] }}>Kathryn Lee</h1>
+                        <NavLink className="brand" to="/" style={{ display: 'flex', textDecoration: 'none', color: color["text"], transition: "0.5s" }}>
+                            <h1>Kathryn Lee</h1>
+                        </NavLink>
                     </Link>
                 </div>
                 <div id="NavRight-expand">
-                    <NavLink to="/About" style={{ display: 'flex', textDecoration: 'none' }}>
-                        <p style={{ color: color["text"] }}>About</p>
+                    <NavLink className="ExpandedLink" to="/About" style={{ display: 'flex', textDecoration: 'none', color: color["text"], transition: "0.5s" }}>
+                        <p>About</p>
                     </NavLink>
-                    <NavLink to="/Work" style={{ display: 'flex', textDecoration: 'none' }}>
-                        <p style={{ color: color["text"] }}>Work</p>
+                    <NavLink className="ExpandedLink" to="/Work" style={{ display: 'flex', textDecoration: 'none', color: color["text"], transition: "0.5s" }}>
+                        <p>Work</p>
                     </NavLink>
-                    <NavLink to="/Play" style={{ display: 'flex', textDecoration: 'none' }}>
-                        <p style={{ color: color["text"] }}>Play</p>
+                    <NavLink className="ExpandedLink" to="/Play" style={{ display: 'flex', textDecoration: 'none', color: color["text"], transition: "0.5s" }}>
+                        <p>Play</p>
                     </NavLink>
                 </div>
                 <div id="NavRight-collapse">
-                    <motion.button onClick={() => setIsOpen(!isOpen)} style={{ border: "0", background: "none" }}>
+                    <motion.button onClick={handleDisplay} style={{ border: "0", background: "none" }}>
                         <HamButton trigger={trigger} />
                     </motion.button>
                 </div>
@@ -83,6 +96,7 @@ const NavbarColorChange = (props) => {
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
                 className="menu"
+                style={{ display: display }}
             >
                 <motion.div className="Vertical"
                     variants={{
@@ -91,11 +105,11 @@ const NavbarColorChange = (props) => {
                             transition: {
                                 type: "spring",
                                 bounce: 0,
-                                duration: 0.7,
+                                duration: 0.5,
                                 delayChildren: 0,
-                                staggerChildren: 0.05,
+                                staggerChildren: 0.03,
                                 staggerDirection: 1
-                                
+
                             }
                         },
                         closed: {
@@ -104,25 +118,26 @@ const NavbarColorChange = (props) => {
                                 type: "spring",
                                 bounce: 0,
                                 duration: 0.5,
+                                delayChildren: 0,
                                 staggerChildren: 0.05,
                                 staggerDirection: -1
                             }
                         }
                     }}
-                    style={{ backgroundColor: color["bg"], width: width, border: color["border"]  }}
+                    style={{ backgroundColor: color["bg"], width: width, border: color["border"] }}
                 >
                     <motion.div className="CenterLink" variants={variants}>
-                        <NavLink className="Link topLink" to="/About" style={{display: 'flex', textDecoration: 'none', color:  color["text"]}}>
+                        <NavLink className="Link topLink" to="/About" style={{ display: 'flex', textDecoration: 'none', color: color["text"] }}>
                             <p>About</p>
                         </NavLink>
                     </motion.div>
                     <motion.div className="CenterLink" variants={variants}>
-                        <NavLink className="Link middleLink"to="/Work" style={{ display: 'flex', textDecoration: 'none', color:  color["text"]}}>
+                        <NavLink className="Link middleLink" to="/Work" style={{ display: 'flex', textDecoration: 'none', color: color["text"] }}>
                             <p>Work</p>
                         </NavLink>
                     </motion.div>
                     <motion.div className="CenterLink" variants={variants}>
-                        <NavLink className="Link bottomLink"to="/Play" style={{ display: 'flex', textDecoration: 'none', color:  color["text"]}}>
+                        <NavLink className="Link bottomLink" to="/Play" style={{ display: 'flex', textDecoration: 'none', color: color["text"] }}>
                             <p>Play</p>
                         </NavLink>
                     </motion.div>

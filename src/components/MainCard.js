@@ -21,10 +21,12 @@ const MainCard = (props) => {
                         <p>{description}</p>
                     </Link>
                 </div>
-                <div className="MainCardTags">
+                <div className="MainCardTags flex-wrap">
                     {tags.map((tag) => (
-                        <ProjectTag
+                        <div className="MainCardTagsMargin">
+                            <ProjectTag
                             tag={tag} />
+                        </div>
                     ))}
 
                 </div>

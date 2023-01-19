@@ -82,10 +82,12 @@ const FeaturedCard = (props) => {
                         <p>{description}</p>
                     </Link>
                 </div>
-                <div className="CardTags rows-2">
+                <div className="CardTags flex-wrap">
                     {tags.map((tag) => (
-                        <ProjectTag
+                        <div className="FeaturedCardTags">
+                            <ProjectTag
                             tag={tag} />
+                        </div>
                     ))}
 
                 </div>
