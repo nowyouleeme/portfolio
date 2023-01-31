@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6e260dbc.css",
-    "main.js": "/portfolio/static/js/main.48bf6fe4.js",
+    "main.css": "/portfolio/static/css/main.b449f40e.css",
+    "main.js": "/portfolio/static/js/main.ecf94403.js",
     "static/js/787.28cb0dcd.chunk.js": "/portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/me.JPG": "/portfolio/static/media/me.a596883ca87ac6a4da33.JPG",
     "static/media/dummyimg.png": "/portfolio/static/media/dummyimg.3fc353374b5b24af4bb6.png",
@@ -10,6 +10,7 @@
     "static/media/shoe.jpg": "/portfolio/static/media/shoe.b6f542dd1a8ea38b87be.jpg",
     "static/media/Slingshot.jpg": "/portfolio/static/media/Slingshot.d824be265da5b3318b4c.jpg",
     "static/media/BLOBBG.png": "/portfolio/static/media/BLOBBG.f2fd6d3284aa64ce0709.png",
+    "static/media/printer.jpg": "/portfolio/static/media/printer.eec91ae66d7bde9af9d6.jpg",
     "static/media/8BALL.png": "/portfolio/static/media/8BALL.f1aeba2855a1a15b4b81.png",
     "static/media/rooberttrial-mediumitalic-webfont.woff": "/portfolio/static/media/rooberttrial-mediumitalic-webfont.8d4c2144d3f23485bcff.woff",
     "static/media/rooberttrial-bolditalic-webfont.woff": "/portfolio/static/media/rooberttrial-bolditalic-webfont.972a29cdedd57cfeb27a.woff",
@@ -26,12 +27,12 @@
     "static/media/rooberttrial-regular-webfont.woff2": "/portfolio/static/media/rooberttrial-regular-webfont.9f631cf4d145a26ff919.woff2",
     "static/media/rooberttrial-heavy-webfont.woff2": "/portfolio/static/media/rooberttrial-heavy-webfont.7c6121735ea33ef6c41e.woff2",
     "index.html": "/portfolio/index.html",
-    "main.6e260dbc.css.map": "/portfolio/static/css/main.6e260dbc.css.map",
-    "main.48bf6fe4.js.map": "/portfolio/static/js/main.48bf6fe4.js.map",
+    "main.b449f40e.css.map": "/portfolio/static/css/main.b449f40e.css.map",
+    "main.ecf94403.js.map": "/portfolio/static/js/main.ecf94403.js.map",
     "787.28cb0dcd.chunk.js.map": "/portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e260dbc.css",
-    "static/js/main.48bf6fe4.js"
+    "static/css/main.b449f40e.css",
+    "static/js/main.ecf94403.js"
   ]
 }
