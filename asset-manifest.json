@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b449f40e.css",
+    "main.css": "/portfolio/static/css/main.01aebae0.css",
     "main.js": "/portfolio/static/js/main.ecf94403.js",
     "static/js/787.28cb0dcd.chunk.js": "/portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/me.JPG": "/portfolio/static/media/me.a596883ca87ac6a4da33.JPG",
@@ -27,12 +27,12 @@
     "static/media/rooberttrial-regular-webfont.woff2": "/portfolio/static/media/rooberttrial-regular-webfont.9f631cf4d145a26ff919.woff2",
     "static/media/rooberttrial-heavy-webfont.woff2": "/portfolio/static/media/rooberttrial-heavy-webfont.7c6121735ea33ef6c41e.woff2",
     "index.html": "/portfolio/index.html",
-    "main.b449f40e.css.map": "/portfolio/static/css/main.b449f40e.css.map",
+    "main.01aebae0.css.map": "/portfolio/static/css/main.01aebae0.css.map",
     "main.ecf94403.js.map": "/portfolio/static/js/main.ecf94403.js.map",
     "787.28cb0dcd.chunk.js.map": "/portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b449f40e.css",
+    "static/css/main.01aebae0.css",
     "static/js/main.ecf94403.js"
   ]
 }
