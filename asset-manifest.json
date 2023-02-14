@@ -1,12 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.01aebae0.css",
-    "main.js": "/portfolio/static/js/main.ecf94403.js",
+    "main.css": "/portfolio/static/css/main.e6e4cf47.css",
+    "main.js": "/portfolio/static/js/main.0dbc40fc.js",
     "static/js/787.28cb0dcd.chunk.js": "/portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/scroll.gif": "/portfolio/static/media/scroll.13eb4bd7e884cd627603.gif",
+    "static/media/webaim.gif": "/portfolio/static/media/webaim.5a0bd246f4d22a2fc158.gif",
+    "static/media/rr-redesign.gif": "/portfolio/static/media/rr-redesign.630c19302947e83f2a0e.gif",
+    "static/media/rr-lofi.jpg": "/portfolio/static/media/rr-lofi.e552b88c9a1ffaaab2cc.jpg",
+    "static/media/redesign.png": "/portfolio/static/media/redesign.f6f980c09a7b3511bc94.png",
+    "static/media/rr-hifi1.png": "/portfolio/static/media/rr-hifi1.6977e8647551404e0932.png",
     "static/media/me.JPG": "/portfolio/static/media/me.a596883ca87ac6a4da33.JPG",
     "static/media/dummyimg.png": "/portfolio/static/media/dummyimg.3fc353374b5b24af4bb6.png",
+    "static/media/rr-styleguide.jpg": "/portfolio/static/media/rr-styleguide.ccff5f5b85b6b43d8963.jpg",
     "static/media/dummyimgcolored.png": "/portfolio/static/media/dummyimgcolored.7708db1612d2eada7eaf.png",
     "static/media/torontocupcake.jpg": "/portfolio/static/media/torontocupcake.e31b66be82623cee2c0c.jpg",
+    "static/media/comparative.png": "/portfolio/static/media/comparative.501cee3d57a880d26319.png",
+    "static/media/rr-hifi2.png": "/portfolio/static/media/rr-hifi2.0c52acf6cdb99316a3c6.png",
+    "static/media/torontohome.png": "/portfolio/static/media/torontohome.142bacb5d6b179907209.png",
     "static/media/shoe.jpg": "/portfolio/static/media/shoe.b6f542dd1a8ea38b87be.jpg",
     "static/media/Slingshot.jpg": "/portfolio/static/media/Slingshot.d824be265da5b3318b4c.jpg",
     "static/media/BLOBBG.png": "/portfolio/static/media/BLOBBG.f2fd6d3284aa64ce0709.png",
@@ -27,12 +37,12 @@
     "static/media/rooberttrial-regular-webfont.woff2": "/portfolio/static/media/rooberttrial-regular-webfont.9f631cf4d145a26ff919.woff2",
     "static/media/rooberttrial-heavy-webfont.woff2": "/portfolio/static/media/rooberttrial-heavy-webfont.7c6121735ea33ef6c41e.woff2",
     "index.html": "/portfolio/index.html",
-    "main.01aebae0.css.map": "/portfolio/static/css/main.01aebae0.css.map",
-    "main.ecf94403.js.map": "/portfolio/static/js/main.ecf94403.js.map",
+    "main.e6e4cf47.css.map": "/portfolio/static/css/main.e6e4cf47.css.map",
+    "main.0dbc40fc.js.map": "/portfolio/static/js/main.0dbc40fc.js.map",
     "787.28cb0dcd.chunk.js.map": "/portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01aebae0.css",
-    "static/js/main.ecf94403.js"
+    "static/css/main.e6e4cf47.css",
+    "static/js/main.0dbc40fc.js"
   ]
 }
